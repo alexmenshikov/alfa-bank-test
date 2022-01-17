@@ -20,8 +20,7 @@ const ProductListing = () => {
 			arrayItem.push({ id, title, image, price, favorite: false });
 		});
 
-		console.log("Products: ", arrayItem);
-
+		console.warn("1. dispatch - рендера карточек");
 		dispatch(setProducts(arrayItem));
 		// dispatch(setProducts(response.data));
 	};
@@ -30,7 +29,6 @@ const ProductListing = () => {
 		fetchProducts();
 	}, []);
 
-	// console.log("Products: ", products);
 	return (
 		<div className="container">
 			<ProductComponent />

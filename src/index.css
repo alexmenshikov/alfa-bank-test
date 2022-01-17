@@ -14,6 +14,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 18px;
+	background-color: #f3f3f3;
 }
 
 code {
@@ -44,6 +45,7 @@ button {
 	border: 2px solid #232323;
 	transition: all 0.3s linear;
 	cursor: pointer;
+	border-radius: 32px 24px;
 }
 
 .filter:hover {
@@ -77,12 +79,14 @@ svg {
 	justify-content: flex-start;
 	overflow: hidden;
 	position: relative;
+	border-radius: 32px 24px;
+	background-color: #fff;
 }
 
 .card__like {
 	position: absolute;
 	top: 10px;
-	right: 20px;
+	right: 10px;
 	cursor: pointer;
 	width: 35px;
 	height: 35px;
@@ -95,13 +99,13 @@ svg {
 }
 
 .card__like:hover {
-	background-color: #dadada;
+	background-color: #f3f3f3;
 }
 
 .card__del {
 	position: absolute;
 	top: 10px;
-	left: 20px;
+	left: 15px;
 	cursor: pointer;
 	width: 35px;
 	height: 35px;
@@ -114,7 +118,7 @@ svg {
 }
 
 .card__del:hover {
-	background-color: #dadada;
+	background-color: #f3f3f3;
 }
 
 .card__item-image {
